@@ -37,7 +37,8 @@ int main() {
 	} while (std::fabs(fungf(x1)) > tol);
 	cout << "root found:"<<x1<< '\n';
 	iterations = 0;
-	x0 = -0.5;
+	cout<<"enter again your initial guess"<<'\n';
+	std::cin>>x0;
 	cout << "metodos newton\n";
 	do {
 		x1 = x0 - (fungf(x0) / dfungf(x0));
